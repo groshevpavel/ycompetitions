@@ -39,7 +39,7 @@ def is_pol(s:str, skippers=skippers)->float:
         else:
             i += 1
 
-        if left>=right:
+        if left >= right:
             return True
 
 
