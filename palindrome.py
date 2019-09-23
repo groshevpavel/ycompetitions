@@ -14,7 +14,7 @@ print(pol)
 # символы которые будут пропущены и НЕ примут участия в решении что строка палиндром
 skippers=[' ', "'", ",", ".", "\n", "?", "ь"]
 
-def is_pol(s:str, skippers=skippers)->float:
+def is_palindrome(s:str, skippers=skippers)->float:
     i, len_s = 0, len(s)
     inc_left, inc_right = 0, 0
 
@@ -44,7 +44,7 @@ def is_pol(s:str, skippers=skippers)->float:
             return True
 
 
-print([is_pol(p) for p in pol])
+print([is_palindrome(p) for p in pol])
 
 # Результат работы
 # ['Я иду с мечем судия', 'Sum summus mus ', 'Кони топот инок', 'Но не речь, а черен он.', 'Идем, молод, долом меди.', 'Чин зван мечем навзничь.', 'Голод, чем меч долог? ']
