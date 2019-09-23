@@ -11,13 +11,14 @@ pol += """Кони топот инок
 
 print(pol)
 
+# символы которые будут пропущены и НЕ примут участия в решении что строка палиндром
 skippers=[' ', "'", ",", ".", "\n", "?", "ь"]
 
 def is_pol(s:str, skippers=skippers)->float:
     i, len_s = 0, len(s)
     inc_left, inc_right = 0, 0
 
-    while i < len_s:
+    while True: # решил что while True в данном случае корректнее, потому что условие while i<len_s и так никогда не выполнится :/
         left, right = i + inc_left, (len_s - 1) - i - inc_right
 
         left_s, right_s = s[left].lower(), s[right].lower()
