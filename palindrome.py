@@ -44,3 +44,8 @@ def is_pol(s:str, skippers=skippers)->float:
 
 
 print([is_pol(p) for p in pol])
+
+# Результат работы
+# ['Я иду с мечем судия', 'Sum summus mus ', 'Кони топот инок', 'Но не речь, а черен он.', 'Идем, молод, долом меди.', 'Чин зван мечем навзничь.', 'Голод, чем меч долог? ']
+# [True, True, True, True, True, True, True]
+
